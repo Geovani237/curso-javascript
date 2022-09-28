@@ -41,9 +41,18 @@ function CadastrarCliente() {
         document.querySelector("#erro-nome").innerHTML = "<em>O nome deve possuir mais de 3 caracteres</em>"
         document.querySelector("#nome").focus()
         return
-    } else{
+    } else {
         document.querySelector("#erro-nome").innerHTML = ""
     }
-    // fazer um if para os outros campos...
+
+    let idade = document.querySelector("#idade").value
+    if (idade > 150 || idade < 0) {
+        document.querySelector("#erro-idade").innerHTML = "<em>A Idade inserida é invalida!</em>"
+        document.querySelector("#idade").focus()
+        return
+    } else {
+        document.querySelector("#erro-idade").innerHTML = ""
+    }
     alert("Cadastro efetuado com sucesso!!!")
 }
+// fazer um if para os outros campos...
