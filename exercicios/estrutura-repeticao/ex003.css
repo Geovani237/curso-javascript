@@ -1,3 +1,6 @@
 fieldset{
     background-color: #eee;
 }
+fieldset input{
+    width: 230px;
+}

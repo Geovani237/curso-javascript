@@ -46,13 +46,44 @@ function CadastrarCliente() {
     }
 
     let idade = document.querySelector("#idade").value
-    if (idade > 150 || idade < 0) {
-        document.querySelector("#erro-idade").innerHTML = "<em>A Idade inserida é invalida!</em>"
+
+    if (idade > 150 || idade < 0 || idade == "") {
+        document.querySelector("#erro-idade").innerHTML = "<em>A Idade inserida é invalida ou nem um número digitado!</em>"
         document.querySelector("#idade").focus()
         return
     } else {
         document.querySelector("#erro-idade").innerHTML = ""
     }
+
+    let salario = document.querySelector("#salario").value
+    if (salario <= 0) {
+        document.querySelector("#erro-salario").innerHTML = "<em>Nada foi inserido,Digite novamente</em>"
+        document.querySelector("#salario").focus()
+        return
+    } else {
+        document.querySelector("#erro-salario").innerHTML = ""
+    }
+
+    let sexo = document.querySelector("#sexo").value
+
+    if (sexo != 'f' && sexo != 'm') {
+        document.querySelector("#erro-sexo").innerHTML = "<em>Letra invalida digite novamente</em>"
+        document.querySelector("#sexo").focus()
+        return
+    } else {
+        document.querySelector("#erro-sexo").innerHTML = ""
+    }
+
+    let estadoCivil = document.querySelector("#estadoCivil").value
+
+    if (estadoCivil != 's' && estadoCivil != 'c' && estadoCivil != 'v' && estadoCivil != 'd') {
+        document.querySelector("#erro-civil").innerHTML = "<em>Informe o estado Civil!</em>"
+        document.querySelector("#estadoCivil").focus()
+        return
+    } else {
+        document.querySelector("#erro-civil").innerHTML = ""
+    }
+
     alert("Cadastro efetuado com sucesso!!!")
 }
 // fazer um if para os outros campos...

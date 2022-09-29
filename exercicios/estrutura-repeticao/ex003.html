@@ -14,9 +14,9 @@
             <legend>Dados Pessoais:</legend>
             Nome: <input type="text" id="nome"> <span id="erro-nome"></span> <br>
             Idade: <input type="number" id="idade"> <span id="erro-idade"></span> <br>
-            Salário: <input type="number" id="salario"><br>
-            Sexo: <input type="text" id="sexo"><br>
-            Estado civil: <input type="text" id="estadoCivil"><br>
+            Salário: <input type="number" id="salario"><span id="erro-salario"></span><br>
+            Sexo: <input type="text" id="sexo" placeholder="Informe o sexo (f ou m)"><span id="erro-sexo"></span><br>
+            Estado civil: <input type="text" id="estadoCivil" placeholder="s-solteiro,c-casado,v-viúvo,d-divorciado"><span id="erro-civil"></span><br>
             <button type="button" onclick="CadastrarCliente()">Cadastrar</button>
         </fieldset>
     </form>
