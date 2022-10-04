@@ -1,13 +1,15 @@
-let banana = 1
-let nescau = 6.99
-let cotonete = 2.99
+function MenorPreco() {
 
-console.log("banana = R$3.00 , nescau = R$6.99, cotonete = R$2.99")
+   produto1 = parseFloat (document.querySelector("#firstProduct").value)
+   produto2 = parseFloat (document.querySelector("#secondProduct").value)
+   produto3 = parseFloat (document.querySelector("#thirdProduct").value)
 
-if(banana < nescau && banana < cotonete){
-    console.log("Compre Banana é o produto mais barato")
-}else if (nescau < banana && nescau < cotonete){
-    console.log("Compre nescau é o produto mais barato")
-}else{
-    console.log("Compre cotonete é o produto mais barato")
+    if (produto1 < produto2 && produto1 < produto3) {
+        document.querySelector("#resultado").innerHTML = 'Compre o 1º é o produto mais barato'
+    } else if (produto2 < produto1 && produto2 < produto3) {
+        document.querySelector("#resultado").innerHTML = 'Compre o 2º é o produto mais barato'
+    } else {
+        document.querySelector("#resultado").innerHTML = 'Compre o 3º é o produto mais barato'
+    }
+
 }
