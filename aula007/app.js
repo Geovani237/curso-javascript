@@ -47,8 +47,8 @@ function fnPegarUmPokemon(url){
 function fnMontarCartao(Pokemon) {
 
     let cartao
-    cartao = `<li>`
-    cartao += `<h3>${Pokemon.name}</h3>`
+    cartao = `<li class ="card ${Pokemon.tipo}">`
+    cartao += `<h3>${Pokemon.nome}</h3>`
     cartao += `<p> <img src="${Pokemon.foto}"></p>`
     cartao += `<p> ${Pokemon.tipo}</p>`
     cartao += `<h4>${Pokemon.id}</h4>`
