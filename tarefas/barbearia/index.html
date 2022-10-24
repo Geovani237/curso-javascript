@@ -14,10 +14,10 @@
     <main class="container">
         <h1 class="text-center">BarBearia</h1>
         <div class="row text-center"> 
-            <div class="col">Serviços</div>
-            <div class="col">Preço</div>
-            <div class="col">Fotos</div>
-            <div class="col">Agenda</div>
+            <label class="col">Serviço</label>
+            <label class="col">Preço</label>
+            <label class="col">Fotos</label>
+            <label class="col">Agenda</label>
         </div>
     </main>
 
@@ -28,15 +28,16 @@
     </div>
 
     <div class="container">
+
         <div class="row">
-            <div class="text-center">Serviços</div>
+            <label class="text-center">Serviços</label>
 
             <div class="col-6 text-center">
-                <img src="/tarefas/barbearia/img/img-cabelo.jpg">
+                <img src="/tarefas/barbearia/img/img-cabelo.jpg" class="rounded figure-img img-fluid">
             </div>
 
             <div class=" col-6 text-center">
-                <img src="/tarefas/barbearia/img/img-barba (1).jpg">
+                <img src="/tarefas/barbearia/img/img-barba (1).jpg" class="rounded figure-img img-fluid">
             </div>
 
             <div class="col-6 text-center">
@@ -47,6 +48,59 @@
                 <p>Barba</p>
             </div>
         </div>
+
+        <div class="row">
+
+            <label class="text-center">Preço</label>
+
+            <div class="col-12 table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Avulso</th>
+                            <th>Mensal</th>
+                        </tr>                       
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Corte</td>
+                            <td>100</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Barba</td>
+                            <td>70</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Pezinho</td>
+                            <td>50</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="text-center">Agenda</label>
+
+            <div class="col-12">
+                <label class="form-label">Nome:</label>
+                <input class="form-control">
+            </div>
+            <div class="col-12">
+                <label class="form-label">Data:</label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label class="form-label">Hora:</label>
+                <input class="form-control">
+            </div>
+        </div>
     </div>
+
+    
 </body>
 </html>
